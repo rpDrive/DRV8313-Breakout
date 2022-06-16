@@ -7,7 +7,7 @@ PCB Top             |  PCB Bottom
 ![PCB Top](documentation/images/DRV8313-Breakout-top.PNG)  |  ![PCB Bottom](documentation/images/DRV8313-Breakout-bottom.PNG)
 
 ## Wireing
-TODO
+![Wireing](documentation/images/PiPico_Example_Schematic.PNG)
 
 ## Example
 ```
