@@ -18,14 +18,16 @@ pwm1.freq(20000)
 pwm2 = PWM(Pin(4))
 pwm2.freq(20000)
 
-u = 7    # Anzahl der Feldumdrehungen
-p = 1.0  # Prozent der max. Spannung
+n = 1.0     # number of motor rotations
+pp = 7      # number motor of pole pairs
+pv = 1.0    # percent of input voltage
+res = 200   # resolutoin/steps per field rotation
 
-scale = 0.5*p
+scale = 0.5*pv
 phi = 0.0
 
-for i in range(200*u):
-    phi = phi + 0.031415
+for i in range(int(n*pp*res)):
+    phi = phi + (2*math.pi)/res
     
     a = 65535 * (scale * math.sin(phi) + 0.5)
     b = 65535 * (scale * math.sin(phi+2.094395) + 0.5)
@@ -35,7 +37,7 @@ for i in range(200*u):
     pwm1.duty_u16(int(b))
     pwm2.duty_u16(int(c))
     
-    time.sleep_ms(1)
+    time.sleep_ms(1)  # adjust rotation speed
 
 
 en.off()
