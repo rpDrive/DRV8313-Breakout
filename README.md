@@ -1,15 +1,32 @@
 # DRV8313-Breakout
 This is a Breakout Board for the Texas-Instruments DRV8313 Triple-Half-Bridge Motor Driver IC
 
+## Specs
+| Property                   | Value        |
+|----------------------------|--------------|
+| Input Voltage              | 8V - 48V     |
+| Input Current (peak)       | 3A           |
+| PWM Phase Inputs           | 3            |
+| Enable Pin                 | 1            |
+| Reset Pin                  | yes          |
+| Sleep Pin                  | yes          |
+| Fault Indication Pin       | yes          |
+| Output Motor Phases        | 3            |
+| Output to Supply Your MCU  | 3.3V         |
+
+
 ## Hardware
 PCB Top             |  PCB Bottom
 :------------------:|:-------------------------:
 ![PCB Top](documentation/images/DRV8313-Breakout-top.PNG)  |  ![PCB Bottom](documentation/images/DRV8313-Breakout-bottom.PNG)
 
+<br/><br/>
+
+# Example with RaspberryPi Pico
 ## Wireing
 ![Wireing](documentation/images/PiPico_Example_Schematic.PNG)
 
-## Example
+## MicroPython Code
 ```
 from machine import Pin, PWM
 import math
