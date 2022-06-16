@@ -16,9 +16,9 @@ This is a Breakout Board for the Texas-Instruments DRV8313 Triple-Half-Bridge Mo
 
 
 ## Hardware
-PCB Top             |  PCB Bottom
-:------------------:|:-------------------------:
-![PCB Top](documentation/images/DRV8313-Breakout-top.PNG)  |  ![PCB Bottom](documentation/images/DRV8313-Breakout-bottom.PNG)
+| PCB Top                                                   | PCB Bottom
+|-----------------------------------------------------------|-----------------------------------------------------------------|
+| ![PCB Top](documentation/images/DRV8313-Breakout-top.PNG) | ![PCB Bottom](documentation/images/DRV8313-Breakout-bottom.PNG) |
 
 <br/><br/>
 
