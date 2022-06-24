@@ -1,6 +1,10 @@
 # DRV8313-Breakout
 This is a Breakout Board for the Texas-Instruments DRV8313 Triple-Half-Bridge Motor Driver IC
 
+## <a href="https://www.ebay.de/itm/384936164923?hash=item599ffbbe3b:g:I74AAOSwUhFin4ep">Where to get it?</a>
+- <a href="https://www.ebay.de/itm/384936164923?hash=item599ffbbe3b:g:I74AAOSwUhFin4ep">eBay</a> (EU shipping only)
+- more platforms may follow soon
+
 ## Specs
 | Property                   | Value        |
 |----------------------------|--------------|
