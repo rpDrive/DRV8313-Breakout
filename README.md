@@ -35,7 +35,7 @@ The output voltage to the motor depends on the input voltage of the DRV8313 and 
 ![Wireing](documentation/images/PiPico_Example_Schematic.PNG)
 
 ## MicroPython Code
-```
+```python
 from machine import Pin, PWM
 import math
 import time
