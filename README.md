@@ -1,5 +1,9 @@
 # DRV8313-Breakout
-This is a Breakout Board for the Texas-Instruments DRV8313 Triple-Half-Bridge Motor Driver IC
+This is an unofficial Breakout Board for the <a href="https://www.ti.com/product/DRV8313" target="_blank" rel="noopener noreferrer">Texas-Instruments DRV8313 Triple-Half-Bridge Motor Driver IC</a>
+
+## <a href="https://www.ebay.de/itm/384936164923?hash=item599ffbbe3b:g:I74AAOSwUhFin4ep" target="_blank" rel="noopener noreferrer">Where to get it?</a>
+- <a href="https://www.ebay.de/itm/384936164923?hash=item599ffbbe3b:g:I74AAOSwUhFin4ep" target="_blank" rel="noopener noreferrer">eBay</a> (EU shipping only)
+- more platforms may follow soon
 
 ## Specs
 | Property                   | Value        |
@@ -23,6 +27,10 @@ This is a Breakout Board for the Texas-Instruments DRV8313 Triple-Half-Bridge Mo
 <br/><br/>
 
 # Example with RaspberryPi Pico
+In this simple example, the DRV8313 breakout board is used together with a <a href="https://www.raspberrypi.com/products/raspberry-pi-pico" target="_blank" rel="noopener noreferrer">RaspberryPi Pico</a> to drive a brushless gimbal motor in an open loop configuration. Open loop means that we have no feedback on the motor angle. The motor is driven similar to a stepper motor with open loop control.<br/>
+Three 120° phase shifted sine waves are fed in via the PWM pins of the microcontroller. The DRV8313 motor driver now amplifies the incoming PWM signal and uses it to drive the motor.<br/>
+The output voltage to the motor depends on the input voltage of the DRV8313 and the duty cycle of the PWM signal.
+
 ## Wireing
 ![Wireing](documentation/images/PiPico_Example_Schematic.PNG)
 
@@ -69,3 +77,9 @@ for i in range(int(n*pp*res)):
 
 en.off()
 ```
+
+<br/><br/>
+
+# What's next?
+If you want to go deeper into the topic of BLDC motor control, you should definitely check out the awesome <a href="https://docs.simplefoc.com" target="_blank" rel="noopener noreferrer">simpleFOC</a> project!<br/>
+You can use this DRV8313 breakout board perfectly as a suitable <a href="https://docs.simplefoc.com/bldcdriver3pwm" target="_blank" rel="noopener noreferrer">BLDC motor driver</a>.
