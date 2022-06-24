@@ -77,3 +77,9 @@ for i in range(int(n*pp*res)):
 
 en.off()
 ```
+
+<br/><br/>
+
+# What's next?
+If you want to go deeper into the topic of BLDC motor control, you should definitely check out the awesome <a href="https://docs.simplefoc.com" target="_blank" rel="noopener noreferrer">simpleFOC</a> project!<br/>
+You can use this DRV8313 breakout board perfectly as a suitable <a href="https://docs.simplefoc.com/bldcdriver3pwm" target="_blank" rel="noopener noreferrer">BLDC motor driver</a>.
